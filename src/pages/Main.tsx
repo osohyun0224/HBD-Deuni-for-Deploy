@@ -125,21 +125,21 @@ const Main = () => {
   };
 
   const reasons = [
-    { img: "v.jpg", text: "너가 좋은 첫 번째 이유, <br/> 잘 생겨서," },
+    { img: "E1.png", text: "너가 좋은 첫 번째 이유, <br/> 잘 생겨서," },
     {
-      img: "v1.jpg",
+      img: "E2.png",
       text: "너가 좋은 두 번째 이유, <br/> 너의 모든 행동이 너무 예뻐서,",
     },
     {
-      img: "teacher.jpg",
+      img: "E3.png",
       text: "너가 좋은 세 번째 이유, <br/> 언제나 주어진 일에 최선을 다해서,",
     },
     {
-      img: "hallym.jpg",
+      img: "E4.png",
       text: "너가 좋은 네 번째 이유, <br/> 너의 웃는 얼굴이 항상 설레서,",
     },
     {
-      img: "hackaton.jpg",
+      img: "E5.png",
       text: "너가 좋은 다섯 번째 이유, <br/> 나에겐 표현이 항상 솔직해서",
     },
   ];

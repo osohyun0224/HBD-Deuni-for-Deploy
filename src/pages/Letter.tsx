@@ -33,7 +33,6 @@ const LetterPaper = styled.div`
 const LetterText = styled.p`
   line-height: 24px;
   position: relative;
-  z-index: 1;
 `;
 
 const WaveLines = styled.div`
@@ -51,7 +50,6 @@ const WaveLines = styled.div`
     transparent 23px
   );
   opacity: 0.05;
-  z-index: 0;
 `;
 
 const LetterPage: React.FC = () => {
@@ -61,15 +59,7 @@ const LetterPage: React.FC = () => {
       <LetterPaper>
         <WaveLines />
         <LetterText>
-          사랑하는 드니야, 24번째 생일 축하해! <br />
-          우리도 만난지 벌써 반년이 되어간다 ... 시간이 엄청 빨라<br/>
-          나는 추운 겨울에 태어났는데, 오빠는 한 여름에 태어났네 ㅋㅋㅋㅋ<br />
-          여름에 태어나서 그런지 공부가 힘들어도 나에게 내색 안하고 <br />
-          운동도 항상 열심히 하는 모습에 오빠의 열정이 항상 느껴져 <br/>
-          중략....<br/>
-          ㅋㅋㅋㅋㅋ 내 마지막 생일 이벤트 어때? ㅋㅋㅋㅋㅋ 난 밤새도록 코딩했지만 <br/>
-          오빠가 이거 보고 행복하다면 난 그걸로 만족해 ㅎㅎ <br/>
-          앞으로도 잘 부탁드리구요 ㅎㅎ 다시 한번 더 생일축하한닷 <br/>
+          블라블라...<br/>
           사랑해!
         </LetterText>
       </LetterPaper>
