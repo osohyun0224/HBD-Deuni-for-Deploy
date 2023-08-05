@@ -6,8 +6,9 @@ const Main = styled.main`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
+  padding-top: 5%;
   font-size: calc(10px + 2vmin);
   color: white;
 `;
@@ -40,6 +41,14 @@ const Button = styled.button`
   }
 `;
 
+const ButtonsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+`;
+
 const IndexPage = () => {
   const [activeButton, setActiveButton] = useState('Main');
   const buttons = ['Main', 'To Deuni', 'Photo', 'Memory', 'Letter for Deuni'];
@@ -51,16 +60,18 @@ const IndexPage = () => {
   return (
     <Main>
       <Title>❤️드니야, 24번째 생일축하해❤️</Title>
-      {buttons.map((button, index) => (
-        <Button
-          key={index}
-          className={activeButton === button ? 'active' : ''}
-          onClick={() => handleClick(button)}
-        >
-          {button}
-        </Button>
-      ))}
-      {}
+      <ButtonsContainer>
+        {buttons.map((button, index) => (
+          <Button
+            key={index}
+            className={activeButton === button ? 'active' : ''}
+            onClick={() => handleClick(button)}
+          >
+            {button}
+          </Button>
+        ))}
+      </ButtonsContainer>
+      {/* 여기서 화면 중앙에 보여질 페이지 내용을 변경하시면 됩니다. */}
     </Main>
   );
 };
