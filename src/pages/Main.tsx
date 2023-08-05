@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 
 const BannerContainer = styled.div`
   text-align: center;
@@ -13,16 +13,16 @@ const Title = styled.p`
   line-height: 22px;
   letter-spacing: -0.02em;
   color: black;
-  margin-bottom:10px;
+  margin-bottom: 20px;
 `;
 
 const ImageContainer = styled.div`
   position: relative;
-  width: 10S0%;
+  width: 80%;
   height: 70vh;
   overflow: hidden;
   margin: 0 auto;
-  margin-top:20px;
+  margin-top: 20px;
 `;
 
 const SlideButton = styled.button`
@@ -50,18 +50,25 @@ const ScrollButton = styled.button`
   border: none;
   cursor: pointer;
   position: fixed;
-  bottom: 10px;
+  bottom: 40px;
   right: 50%;
   animation: scrollAnimation 1s infinite;
   &:focus {
     outline: none;
   }
   @keyframes scrollAnimation {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
-    100% { transform: translateY(0); }
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 `;
+
 const ReasonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -80,16 +87,26 @@ const ReasonItem = styled.div`
 const ReasonImage = styled.img`
   width: 50%;
   object-fit: cover;
+  border-radius: 20px;
 `;
 
 const ReasonText = styled.div`
-  font-size: 20px;
+  font-family: "Gaegu", cursive;
+  font-size: 30px;
+  color: black;
   text-align: left;
   margin-left: 20px;
+  margin-right: 20px;
 `;
 
 const Main = () => {
-  const images = ['Banner1.jpg', 'Banner2.jpg', 'Banner3.jpg', 'Banner4.jpg', 'Banner5.jpg'];
+  const images = [
+    "Banner1.jpg",
+    "Banner2.jpg",
+    "Banner3.jpg",
+    "Banner4.jpg",
+    "Banner5.jpg",
+  ];
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -108,22 +125,34 @@ const Main = () => {
   };
 
   const reasons = [
-    { img: 'me1.jpg', text: '너가 좋은 첫 번째 이유, <br/> 잘 생겨서,' },
-    { img: 'me2.jpg', text: '너가 좋은 두 번째 이유, <br/> 하는 모든 행동이 예뻐서,' },
-    { img: 'teacher.jpg', text: '너가 좋은 세 번째 이유, <br/> 주어진 일에 최선을 다해서,' },
-    { img: 'hallym.jpg', text: '너가 좋은 네 번째 이유, <br/> 웃는 얼굴이 항상 설레서,' },
-    { img: 'hackaton.jpg', text: '너가 좋은 다섯 번째 이유, <br/> 나에겐 표현이 항상 솔직해서' }
+    { img: "full1.jpg", text: "너가 좋은 첫 번째 이유, <br/> 잘 생겨서," },
+    {
+      img: "v1.jpg",
+      text: "너가 좋은 두 번째 이유, <br/> 너의 모든 행동이 너무 예뻐서,",
+    },
+    {
+      img: "teacher.jpg",
+      text: "너가 좋은 세 번째 이유, <br/> 언제나 주어진 일에 최선을 다해서,",
+    },
+    {
+      img: "hallym.jpg",
+      text: "너가 좋은 네 번째 이유, <br/> 너의 웃는 얼굴이 항상 설레서,",
+    },
+    {
+      img: "hackaton.jpg",
+      text: "너가 좋은 다섯 번째 이유, <br/> 나에겐 표현이 항상 솔직해서",
+    },
   ];
 
   return (
     <BannerContainer>
-      <Title>오빠 모음 ZIP</Title>
+      <Title>😼 All About Deuni 😼</Title>
       <ImageContainer>
-        <SlideButton onClick={prevSlide} style={{ left: '10px' }}>
+        <SlideButton onClick={prevSlide} style={{ left: "10px" }}>
           &#10094;
         </SlideButton>
         <Image src={`/images/${images[current]}`} alt="" />
-        <SlideButton onClick={nextSlide} style={{ right: '10px' }}>
+        <SlideButton onClick={nextSlide} style={{ right: "10px" }}>
           &#10095;
         </SlideButton>
       </ImageContainer>
@@ -131,11 +160,21 @@ const Main = () => {
       <ReasonContainer>
         {reasons.map((reason, index) => (
           <ReasonItem key={index}>
-            <ReasonImage src={`/images/${reason.img}`} alt="" />
-            <ReasonText dangerouslySetInnerHTML={{ __html: reason.text }} />
+            {index % 2 === 0 ? (
+              <>
+                <ReasonImage src={`/images/${reason.img}`} alt="" />
+                <ReasonText dangerouslySetInnerHTML={{ __html: reason.text }} />
+              </>
+            ) : (
+              <>
+                <ReasonText dangerouslySetInnerHTML={{ __html: reason.text }} />
+                <ReasonImage src={`/images/${reason.img}`} alt="" />
+              </>
+            )}
           </ReasonItem>
         ))}
       </ReasonContainer>
+      <Title>너의 24번째 생일을 진심으로 축하해 🐶</Title>
     </BannerContainer>
   );
 };
