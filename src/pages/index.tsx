@@ -25,6 +25,7 @@ const Title = styled.h1`
 `;
 
 const Button = styled.button`
+  font-family: "Nanum Pen Script", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 22px;
