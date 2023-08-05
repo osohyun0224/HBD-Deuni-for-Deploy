@@ -4,6 +4,7 @@ import MainComponent from "./Main";
 import ToDeuniPage from "./ToDeuni";
 import PhotoPage from './Photo';
 import PresentPage from './Present';
+import LetterPage from "./Letter";
 
 const MainContainer = styled.main` 
   background-color: #DBF1C9;
@@ -84,6 +85,7 @@ const IndexPage = () => {
       {activeButton === "To Deuni" && <ToDeuniPage />}
       {activeButton === 'Photo' && <PhotoPage />} 
       {activeButton === 'Present' && <PresentPage />} 
+      {activeButton === 'Letter for Deuni' && <LetterPage />} 
     </MainContainer>
   );
 };
