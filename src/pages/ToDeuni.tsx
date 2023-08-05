@@ -32,21 +32,21 @@ const AddButton = styled.button`
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  border: 1px solid #d94a56;
+  border: 1px solid #3D631F;
   background: #ffffff;
   cursor: pointer;
 
   font-family: "Nanum Pen Script", cursive;
   font-weight: 600;
   font-size: 16px;
-  color: #d94a56;
+  color: #3D631F;
 `;
 
 const MessageInput = styled.textarea`
   width: 500px;
   height: 165px;
   border-radius: 0px;
-  background-color: #EEF1F4;
+  background-color: #B4DD94;
   font-family: "Nanum Pen Script", cursive;
   font-size: 30px;
   color: black;
