@@ -45,7 +45,7 @@ const Image = styled.img`
 `;
 
 const ScrollButton = styled.button`
-  font-size: 2rem;
+  font-size: 3rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -125,7 +125,7 @@ const Main = () => {
   };
 
   const reasons = [
-    { img: "full1.jpg", text: "너가 좋은 첫 번째 이유, <br/> 잘 생겨서," },
+    { img: "v.jpg", text: "너가 좋은 첫 번째 이유, <br/> 잘 생겨서," },
     {
       img: "v1.jpg",
       text: "너가 좋은 두 번째 이유, <br/> 너의 모든 행동이 너무 예뻐서,",

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import MainComponent from "./Main";
+import ToDeuniPage from "./ToDeuni";
 
 const MainContainer = styled.main` 
-  background-color: #92d061;
+  background-color: #EEF1F4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,6 +34,7 @@ const Button = styled.button`
   letter-spacing: -0.02em;
   text-align: center;
   background-color: transparent;
+  color: black;
   border: none;
   cursor: pointer;
   height: 48px;
@@ -77,6 +79,7 @@ const IndexPage = () => {
         ))}
       </ButtonsContainer>
       {activeButton === "Main" && <MainComponent />} 
+      {activeButton === "To Deuni" && <ToDeuniPage />}
     </MainContainer>
   );
 };
