@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import MainComponent from "./Main";
 import ToDeuniPage from "./ToDeuni";
+import PhotoPage from './Photo';
 
 const MainContainer = styled.main` 
   background-color: #EEF1F4;
@@ -80,6 +81,7 @@ const IndexPage = () => {
       </ButtonsContainer>
       {activeButton === "Main" && <MainComponent />} 
       {activeButton === "To Deuni" && <ToDeuniPage />}
+      {activeButton === 'Photo' && <PhotoPage />} 
     </MainContainer>
   );
 };
