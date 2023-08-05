@@ -3,6 +3,7 @@ import styled from "styled-components";
 import MainComponent from "./Main";
 import ToDeuniPage from "./ToDeuni";
 import PhotoPage from './Photo';
+import PresentPage from './Present';
 
 const MainContainer = styled.main` 
   background-color: #EEF1F4;
@@ -59,7 +60,7 @@ const ButtonsContainer = styled.div`
 
 const IndexPage = () => {
   const [activeButton, setActiveButton] = useState("Main");
-  const buttons = ["Main", "To Deuni", "Photo", "Memory", "Letter for Deuni"];
+  const buttons = ["Main", "To Deuni", "Photo", "Present", "Letter for Deuni"];
 
   const handleClick = (buttonName: string) => {
     setActiveButton(buttonName);
@@ -82,6 +83,7 @@ const IndexPage = () => {
       {activeButton === "Main" && <MainComponent />} 
       {activeButton === "To Deuni" && <ToDeuniPage />}
       {activeButton === 'Photo' && <PhotoPage />} 
+      {activeButton === 'Present' && <PresentPage />} 
     </MainContainer>
   );
 };
