@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import MainComponent from "./Main";
 
-const Main = styled.main`
+const MainContainer = styled.main` 
   background-color: #92d061;
   min-height: 100vh;
   display: flex;
@@ -50,7 +51,7 @@ const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px; /* 버튼간 간격 20px로 설정 */
+  gap: 20px; 
 `;
 
 const IndexPage = () => {
@@ -62,7 +63,7 @@ const IndexPage = () => {
   };
 
   return (
-    <Main>
+    <MainContainer> 
       <Title>❤️드니야, 24번째 생일축하해❤️</Title>
       <ButtonsContainer>
         {buttons.map((button, index) => (
@@ -75,7 +76,8 @@ const IndexPage = () => {
           </Button>
         ))}
       </ButtonsContainer>
-    </Main>
+      {activeButton === "Main" && <MainComponent />} 
+    </MainContainer>
   );
 };
 
