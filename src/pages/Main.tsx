@@ -62,6 +62,31 @@ const ScrollButton = styled.button`
     100% { transform: translateY(0); }
   }
 `;
+const ReasonContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+`;
+
+const ReasonItem = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 70%;
+`;
+
+const ReasonImage = styled.img`
+  width: 50%;
+  object-fit: cover;
+`;
+
+const ReasonText = styled.div`
+  font-size: 20px;
+  text-align: left;
+  margin-left: 20px;
+`;
 
 const Main = () => {
   const images = ['Banner1.jpg', 'Banner2.jpg', 'Banner3.jpg', 'Banner4.jpg', 'Banner5.jpg'];
@@ -82,6 +107,14 @@ const Main = () => {
     setCurrent((current + 1) % images.length);
   };
 
+  const reasons = [
+    { img: 'me1.jpg', text: '너가 좋은 첫 번째 이유, <br/> 잘 생겨서,' },
+    { img: 'me2.jpg', text: '너가 좋은 두 번째 이유, <br/> 하는 모든 행동이 예뻐서,' },
+    { img: 'teacher.jpg', text: '너가 좋은 세 번째 이유, <br/> 주어진 일에 최선을 다해서,' },
+    { img: 'hallym.jpg', text: '너가 좋은 네 번째 이유, <br/> 웃는 얼굴이 항상 설레서,' },
+    { img: 'hackaton.jpg', text: '너가 좋은 다섯 번째 이유, <br/> 나에겐 표현이 항상 솔직해서' }
+  ];
+
   return (
     <BannerContainer>
       <Title>오빠 모음 ZIP</Title>
@@ -95,6 +128,14 @@ const Main = () => {
         </SlideButton>
       </ImageContainer>
       <ScrollButton>&#8595;</ScrollButton>
+      <ReasonContainer>
+        {reasons.map((reason, index) => (
+          <ReasonItem key={index}>
+            <ReasonImage src={`/images/${reason.img}`} alt="" />
+            <ReasonText dangerouslySetInnerHTML={{ __html: reason.text }} />
+          </ReasonItem>
+        ))}
+      </ReasonContainer>
     </BannerContainer>
   );
 };
