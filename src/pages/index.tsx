@@ -21,6 +21,7 @@ const Title = styled.h1`
   letter-spacing: -0.02em;
   text-align: center;
   color: black;
+  margin-bottom: 10px; 
 `;
 
 const Button = styled.button`
@@ -30,9 +31,13 @@ const Button = styled.button`
   line-height: 22px;
   letter-spacing: -0.02em;
   text-align: center;
-  background-color: white;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+  height: 48px; 
+  padding: 13px 24px;
+  border-radius: 6px;
+  margin-top: 30px;
   &:focus {
     outline: none;
   }
@@ -45,8 +50,7 @@ const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 20px; /* 버튼간 간격 20px로 설정 */
 `;
 
 const IndexPage = () => {
@@ -71,7 +75,6 @@ const IndexPage = () => {
           </Button>
         ))}
       </ButtonsContainer>
-      {/* 여기서 화면 중앙에 보여질 페이지 내용을 변경하시면 됩니다. */}
     </Main>
   );
 };
