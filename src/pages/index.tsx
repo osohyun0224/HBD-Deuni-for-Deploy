@@ -6,7 +6,7 @@ import PhotoPage from './Photo';
 import PresentPage from './Present';
 
 const MainContainer = styled.main` 
-  background-color: #EEF1F4;
+  background-color: #DBF1C9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -20,13 +20,20 @@ const CelebrationText = styled.h1`
 `;
 
 const CountdownText = styled.div`
-  font-size: 24px;
+  font-size: 50px;
   color: black;
 `;
 
-const Image = styled.img`
+type ImageProps = {
+  show: boolean;
+};
+
+const Image = styled.img<ImageProps>`
   display: ${props => (props.show ? 'block' : 'none')};
+  width: 40%; 
+  height: auto; 
 `;
+
 
 const PresentPage: React.FC = () => {
   const [countdown, setCountdown] = useState(5);
@@ -43,7 +50,7 @@ const PresentPage: React.FC = () => {
 
   return (
     <PresentContainer>
-      <CelebrationText>선물은 과연 무엇일까요 ...?</CelebrationText>
+      <CelebrationText>오빠를 위한 선물은 과연 무엇일까요 ...?</CelebrationText>
       {!showImage && <CountdownText>{countdown}</CountdownText>}
       <Image show={showImage} src="/images/present.jpg" alt="present"/>
     </PresentContainer>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const ToDeuniContainer = styled.div`
-  background-color: #EEF1F4;
+  background-color: #DBF1C9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
