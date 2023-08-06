@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import YouTube from 'react-youtube';
+import React from "react";
+import styled from "styled-components";
+import YouTube from "react-youtube";
 
 const LetterContainer = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ const LetterContainer = styled.div`
 `;
 
 const TitleText = styled.h1`
-  font-family: "Nanum Pen Script", cursive;
+  font-family: "Gaegu", cursive;
   font-size: 30px;
   font-weight: 800;
   line-height: 22px;
@@ -32,6 +32,7 @@ const LetterPaper = styled.div`
 `;
 
 const LetterText = styled.p`
+  font-family: "Gaegu", cursive;
   line-height: 24px;
   position: relative;
 `;
@@ -60,8 +61,8 @@ const VideoWrapper = styled.div`
 
 const LetterPage: React.FC = () => {
   const videoOptions = {
-    width: '600', 
-    height: '338', 
+    width: "600",
+    height: "338",
   };
 
   return (
@@ -70,13 +71,14 @@ const LetterPage: React.FC = () => {
       <LetterPaper>
         <WaveLines />
         <LetterText>
-          블라블라...<br />
+          블라블라...
+          <br />
           사랑해!
         </LetterText>
       </LetterPaper>
       <VideoWrapper>
-      <TitleText>Listen to the Song 🎤</TitleText>
-        <YouTube videoId="Mcp1UhXsyU4" opts={videoOptions} /> 
+        <TitleText>Listen to the Song 🎤</TitleText>
+        <YouTube videoId="Mcp1UhXsyU4" opts={videoOptions} />
       </VideoWrapper>
     </LetterContainer>
   );

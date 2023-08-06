@@ -99,6 +99,23 @@ const ReasonText = styled.div`
   margin-right: 20px;
 `;
 
+const Developer = styled.div`
+  font-family: "Gaegu", cursive;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+`;
+
+const DevelopText = styled.div`
+  font-family: "Gaegu", cursive;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+`;
 const Main = () => {
   const images = [
     "Banner1.jpg",
@@ -174,7 +191,9 @@ const Main = () => {
           </ReasonItem>
         ))}
       </ReasonContainer>
-      <Title>너의 24번째 생일을 진심으로 축하해 🐶</Title>
+      <Title>🎉오빠의 24번째 생일을 진심으로 축하해 🎉</Title>
+      <Developer>Developed by. 오빠 옆에서 든든히 지키는 댕댕이 여자친구가 🐶 </Developer>
+      <DevelopText>github: @osohyun0224</DevelopText>
     </BannerContainer>
   );
 };
