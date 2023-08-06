@@ -53,7 +53,7 @@ const MessageInput = styled.textarea`
 `;
 
 const MessageContainer = styled.div`
-  width: 35%;
+  width: 100%;
   font-family: "Nanum Pen Script", cursive;
   padding: 13px 24px 13px 24px;
   border-radius: 6px;
