@@ -12,23 +12,6 @@
 #### 💻 Development
 <img src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=React&logoColor=black"/> <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white" /> <img src="https://img.shields.io/badge/Styled Components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white" /> <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"/>  
 
-#### Packages
-`
-  "dependencies": {
-    "@types/node": "20.4.8",
-    "@types/react": "18.2.18",
-    "@types/react-dom": "18.2.7",
-    "@types/react-webcam": "^3.0.0",
-    "next": "13.4.12",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-webcam": "^7.1.1",
-    "react-youtube": "^10.1.0",
-    "styled-components": "^6.0.7",
-    "typescript": "5.1.6"
-  },
-`
-
 #### ⌛ Developed Period
 ##### 2023.08.06 AM 12:00 - 5:00 ( 급하게 만들어서 허접함 주의 🚨)
 
