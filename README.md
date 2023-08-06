@@ -3,12 +3,12 @@
 ### 프론트 개발자의 특별한 생일 이벤트 프로젝트 🎉 (배포용)
 > [개발자의 말]
 > 
-> 프론트엔드 개발자의 초간단 생일 축하 이벤트를 위한 웹사이트 프로젝트입니다.<br/>  이 레포에는 개인정보 다 배포용으로 교체했습니다! <br/> 이 레포를 마음껏 클론하셔서 여러분들 만의 개성있는 웹사이트를 만들어주세요 ㅎㅎ
+> 프론트엔드 개발자의 초간단 생일 축하 이벤트를 위한 웹사이트 프로젝트입니다.<br/>  이 레포에는 개인정보 관련 내용 다 배포용으로 교체했습니다! <br/> 이 레포를 마음껏 클론하셔서 여러분만의 개성있는 웹사이트를 만들어주세요 ㅎㅎ
 
 ### 📌 웹사이트 확인하기 
 [바로 확인하기 😼](https://hbd-deuni-for-deploy.vercel.app/)
 
-### 📚 Teach Stack 
+### 📚 Tech Stack 
 #### 💻 Development
 <img src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=React&logoColor=black"/> <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white" /> <img src="https://img.shields.io/badge/Styled Components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white" /> <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"/>  
 
