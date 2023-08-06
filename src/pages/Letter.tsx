@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import YouTube from 'react-youtube';
 
 const LetterContainer = styled.div`
   display: flex;
@@ -17,7 +18,7 @@ const TitleText = styled.h1`
   letter-spacing: -0.02em;
   text-align: center;
   color: black;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-top: 0px;
 `;
 
@@ -52,17 +53,31 @@ const WaveLines = styled.div`
   opacity: 0.05;
 `;
 
+const VideoWrapper = styled.div`
+  width: 100%;
+  max-width: 600px;
+`;
+
 const LetterPage: React.FC = () => {
+  const videoOptions = {
+    width: '600', 
+    height: '338', 
+  };
+
   return (
     <LetterContainer>
       <TitleText>사랑하는 오빠에게</TitleText>
       <LetterPaper>
         <WaveLines />
         <LetterText>
-          블라블라...<br/>
+          블라블라...<br />
           사랑해!
         </LetterText>
       </LetterPaper>
+      <VideoWrapper>
+      <TitleText>Listen to the Song 🎤</TitleText>
+        <YouTube videoId="Mcp1UhXsyU4" opts={videoOptions} /> 
+      </VideoWrapper>
     </LetterContainer>
   );
 };
