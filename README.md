@@ -56,6 +56,6 @@
 ### ✒️ 개발 후기 
 [개발후기 벨로그 확인하기](https://velog.io/@osohyun0224/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EC%83%9D%EC%9D%BC-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%8A%A4%EC%BC%80%EC%9D%BC-%EB%AF%B8%EC%B3%A4%EB%8B%A4)
 
-### 📌 2023 8월 2주차 Velog Top 6 🏆
-<img src="https://github.com/osohyun0224/HBD_Deuni_for_Deploy/assets/53892427/d724931b-4ada-4944-b854-50413c44509c" width=70% />
+### 📌 2023 8월 2주차 Velog Top 5 🏆
+<img src="https://github.com/osohyun0224/HBD_Deuni_for_Deploy/assets/53892427/b20c2693-9b73-4d0d-8290-dd9d3c171510" width=70% />
 
